@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WKO Intelligence - Modern Intake Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Fixed Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <h2>WKO Intelligence</h2>
+                </div>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#dashboard">Dashboard</a>
+                    <a href="#integrations">Platforms</a>
+                    <a href="#partners">Partners</a>
+                </div>
+                <button class="btn btn-primary">Try Demo</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Build Better Client Intake</h1>
+                <p>From screening to submission. Complete intake automation built for modern law firms.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary-large">Try Interactive Demo</button>
+                    <button class="btn btn-secondary">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <p class="section-subtitle">From lead to submission in 6 simple stages</p>
+
+            <div class="workflow-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Lead Screening</h3>
+                    <p>A potential client reaches out. Capture their details in your intake form.</p>
+                </div>
+                <div class="step-arrow">→</div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Qualify Lead</h3>
+                    <p>Review and qualify the lead. WKO Intelligence automatically sends the form link.</p>
+                </div>
+                <div class="step-arrow">→</div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Client Fills Form</h3>
+                    <p>Client receives email and completes the questionnaire. Auto-saves every 3 seconds.</p>
+                </div>
+                <div class="step-arrow">→</div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Smart Reminders</h3>
+                    <p>Automated reminders sent at 3 days, 1 week, 2 weeks to keep clients engaged.</p>
+                </div>
+                <div class="step-arrow">→</div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <h3>Review & Verify</h3>
+                    <p>Lawyer reviews completed form on the dashboard. All data verified and ready.</p>
+                </div>
+                <div class="step-arrow">→</div>
+                <div class="step">
+                    <div class="step-number">6</div>
+                    <h3>Submit to Your CMS</h3>
+                    <p>One-click submission to any CMS: Smokeball, Clio, MyCase, or 7+ other platforms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Preview Section -->
+    <section id="dashboard" class="dashboard-section">
+        <div class="container">
+            <h2>Real-Time Intake Management</h2>
+            <p class="section-subtitle">Track every lead from screening to your case management system. See real-time progress across your entire team.</p>
+
+            <div class="dashboard-container">
+                <div class="dashboard-scroll">
+                    <!-- Column 1: Pending -->
+                    <div class="kanban-column">
+                        <div class="column-header">
+                            <h3>Pending</h3>
+                            <span class="badge">3</span>
+                        </div>
+                        <div class="kanban-cards">
+                            <div class="card">
+                                <h4>John Smith</h4>
+                                <p class="card-email">john.smith@email.com</p>
+                                <p class="card-type">Estate Planning</p>
+                                <p class="card-date">2 days ago</p>
+                                <button class="btn btn-sm">Qualify</button>
+                            </div>
+                            <div class="card">
+                                <h4>Sarah Johnson</h4>
+                                <p class="card-email">sarah.j@email.com</p>
+                                <p class="card-type">Family Law</p>
+                                <p class="card-date">5 hours ago</p>
+                                <button class="btn btn-sm">Qualify</button>
+                            </div>
+                            <div class="card">
+                                <h4>Michael Brown</h4>
+                                <p class="card-email">m.brown@email.com</p>
+                                <p class="card-type">Wills</p>
+                                <p class="card-date">1 day ago</p>
+                                <button class="btn btn-sm">Qualify</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Sent -->
+                    <div class="kanban-column">
+                        <div class="column-header">
+                            <h3>Sent</h3>
+                            <span class="badge">2</span>
+                        </div>
+                        <div class="kanban-cards">
+                            <div class="card">
+                                <h4>Emma Wilson</h4>
+                                <p class="card-email">emma@email.com</p>
+                                <div class="progress-wrapper">
+                                    <span class="progress-text">0%</span>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 0%"></div>
+                                    </div>
+                                </div>
+                                <p class="card-date">Sent 2 days ago</p>
+                                <button class="btn btn-sm">Resend</button>
+                            </div>
+                            <div class="card">
+                                <h4>David Lee</h4>
+                                <p class="card-email">d.lee@email.com</p>
+                                <div class="progress-wrapper">
+                                    <span class="progress-text">0%</span>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 0%"></div>
+                                    </div>
+                                </div>
+                                <p class="card-date">Sent 6 hours ago</p>
+                                <button class="btn btn-sm">Resend</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 3: In Progress -->
+                    <div class="kanban-column">
+                        <div class="column-header">
+                            <h3>In Progress</h3>
+                            <span class="badge">4</span>
+                        </div>
+                        <div class="kanban-cards">
+                            <div class="card">
+                                <h4>Lisa Anderson</h4>
+                                <p class="card-email">lisa@email.com</p>
+                                <div class="progress-wrapper">
+                                    <span class="progress-text">45%</span>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 45%"></div>
+                                    </div>
+                                </div>
+                                <p class="card-date">2 hours ago</p>
+                                <button class="btn btn-sm">View</button>
+                            </div>
+                            <div class="card">
+                                <h4>Robert Taylor</h4>
+                                <p class="card-email">r.taylor@email.com</p>
+                                <div class="progress-wrapper">
+                                    <span class="progress-text">68%</span>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 68%"></div>
+                                    </div>
+                                </div>
+                                <p class="card-date">30 mins ago</p>
+                                <button class="btn btn-sm">View</button>
+                            </div>
+                            <div class="card">
+                                <h4>Jessica Martinez</h4>
+                                <p class="card-email">j.martinez@email.com</p>
+                                <div class="progress-wrapper">
+                                    <span class="progress-text">23%</span>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 23%"></div>
+                                    </div>
+                                </div>
+                                <p class="card-date">4 hours ago</p>
+                                <button class="btn btn-sm">Remind</button>
+                            </div>
+                            <div class="card">
+                                <h4>Thomas Chen</h4>
+                                <p class="card-email">t.chen@email.com</p>
+                                <div class="progress-wrapper">
+                                    <span class="progress-text">82%</span>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 82%"></div>
+                                    </div>
+                                </div>
+                                <p class="card-date">1 hour ago</p>
+                                <button class="btn btn-sm">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 4: Completed -->
+                    <div class="kanban-column">
+                        <div class="column-header">
+                            <h3>Completed</h3>
+                            <span class="badge">3</span>
+                        </div>
+                        <div class="kanban-cards">
+                            <div class="card card-completed">
+                                <h4>Amanda Green</h4>
+                                <p class="card-email">a.green@email.com</p>
+                                <div class="progress-wrapper">
+                                    <span class="progress-text">100%</span>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 100%"></div>
+                                    </div>
+                                </div>
+                                <p class="card-date">Completed 1 day ago</p>
+                                <button class="btn btn-sm btn-submit">→ Submit</button>
+                            </div>
+                            <div class="card card-completed">
+                                <h4>Christopher Hall</h4>
+                                <p class="card-email">c.hall@email.com</p>
+                                <div class="progress-wrapper">
+                                    <span class="progress-text">100%</span>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 100%"></div>
+                                    </div>
+                                </div>
+                                <p class="card-date">Completed 3 days ago</p>
+                                <button class="btn btn-sm btn-submit">→ Submit</button>
+                            </div>
+                            <div class="card card-completed">
+                                <h4>Victoria White</h4>
+                                <p class="card-email">v.white@email.com</p>
+                                <div class="progress-wrapper">
+                                    <span class="progress-text">100%</span>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 100%"></div>
+                                    </div>
+                                </div>
+                                <p class="card-date">Completed 5 days ago</p>
+                                <button class="btn btn-sm btn-submit">→ Submit</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 5: Submitted -->
+                    <div class="kanban-column">
+                        <div class="column-header">
+                            <h3>Submitted</h3>
+                            <span class="badge">2</span>
+                        </div>
+                        <div class="kanban-cards">
+                            <div class="card card-submitted">
+                                <h4>Patrick Moore</h4>
+                                <p class="card-email">p.moore@email.com</p>
+                                <p class="card-date">✓ In system</p>
+                                <button class="btn btn-sm" disabled>Submitted</button>
+                            </div>
+                            <div class="card card-submitted">
+                                <h4>Susan Davis</h4>
+                                <p class="card-email">s.davis@email.com</p>
+                                <p class="card-date">✓ In system</p>
+                                <button class="btn btn-sm" disabled>Submitted</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 6: Overdue -->
+                    <div class="kanban-column">
+                        <div class="column-header">
+                            <h3>Overdue</h3>
+                            <span class="badge" style="background-color: #EF5350;">2</span>
+                        </div>
+                        <div class="kanban-cards">
+                            <div class="card card-overdue">
+                                <h4>Nicholas King</h4>
+                                <p class="card-email">n.king@email.com</p>
+                                <div class="progress-wrapper">
+                                    <span class="progress-text">15%</span>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 15%"></div>
+                                    </div>
+                                </div>
+                                <p class="card-date">8 days overdue</p>
+                                <button class="btn btn-sm btn-warn">Remind</button>
+                            </div>
+                            <div class="card card-overdue">
+                                <h4>Jennifer Scott</h4>
+                                <p class="card-email">j.scott@email.com</p>
+                                <div class="progress-wrapper">
+                                    <span class="progress-text">35%</span>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 35%"></div>
+                                    </div>
+                                </div>
+                                <p class="card-date">12 days overdue</p>
+                                <button class="btn btn-sm btn-warn">Remind</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features dark-section">
+        <div class="container">
+            <h2>Core Features</h2>
+
+            <div class="features-layout">
+                <div class="feature-column">
+                    <div class="feature-card">
+                        <div class="feature-number">01</div>
+                        <h3>Lead Screening</h3>
+                        <p>Capture all client data in one intake form. Standardized screening ensures nothing is missed.</p>
+                        <span class="feature-tag">Customizable</span>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-number">02</div>
+                        <h3>Auto-Save Forms</h3>
+                        <p>Clients never lose progress. Forms save automatically every 3 seconds with no action needed.</p>
+                        <span class="feature-tag">Every 3 seconds</span>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-number">03</div>
+                        <h3>Smart Reminders</h3>
+                        <p>Auto-reminders at 3 days, 1 week, 2 weeks. Keep clients engaged and boost completion rates.</p>
+                        <span class="feature-tag">Automated</span>
+                    </div>
+                </div>
+
+                <div class="feature-column">
+                    <div class="feature-card">
+                        <div class="feature-number">04</div>
+                        <h3>Real-Time Dashboard</h3>
+                        <p>See where every client is in the process. Visual Kanban board shows all stages instantly.</p>
+                        <span class="feature-tag">Live Updates</span>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-number">05</div>
+                        <h3>Direct Integration</h3>
+                        <p>One-click submission to Smokeball, Clio, or standalone. No manual re-entry needed.</p>
+                        <span class="feature-tag">10+ Platforms</span>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-number">06</div>
+                        <h3>Multi-Lawyer Support</h3>
+                        <p>Assign leads to specific lawyers. Track progress by team member across your entire firm.</p>
+                        <span class="feature-tag">Collaboration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why WKO Intelligence Section -->
+    <section class="why-section">
+        <div class="container">
+            <h2>Why WKO Intelligence?</h2>
+            <p class="section-subtitle">The missing piece between your intake form and case management system</p>
+
+            <div class="why-grid">
+                <div class="why-card">
+                    <h3>Zero Data Entry Errors</h3>
+                    <p>Clients fill once. Data flows directly to your CMS. No manual re-entry means no lost information or mistakes.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Close Cases 30% Faster</h3>
+                    <p>Eliminate intake bottlenecks. Qualified leads reach your CMS ready to work. No waiting, no delays.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Higher Quality Leads</h3>
+                    <p>87% completion rate means thorough intake data. Better qualified leads = better case outcomes.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Complete Visibility</h3>
+                    <p>Real-time dashboard shows exactly where every lead is. No status calls, no surprises—everything at a glance.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Use What You Have</h3>
+                    <p>Works with Smokeball, Clio, MyCase, or any system you already use. No vendor lock-in.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Team Accountability</h3>
+                    <p>Track which lawyer owns which lead. Scale your firm's intake without losing control or growing headcount.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platforms Section -->
+    <section id="integrations" class="platforms-section">
+        <div class="container">
+            <h2>Works With All Major Platforms</h2>
+            <p class="section-subtitle">Compatible with 10+ case management systems</p>
+
+            <div class="platforms-carousel">
+                <div class="carousel-track">
+                    <div class="platform-item">
+                        <div class="platform-logo">
+                            <img src="./logos/smokeball.png" alt="Smokeball">
+                        </div>
+                        <h3>Smokeball</h3>
+                        <p>Native integration</p>
+                    </div>
+                    <div class="platform-item">
+                        <div class="platform-logo">
+                            <img src="./logos/clio.png" alt="Clio">
+                        </div>
+                        <h3>Clio</h3>
+                        <p>API Ready</p>
+                    </div>
+                    <div class="platform-item">
+                        <div class="platform-logo">
+                            <img src="./logos/mycase_logo_colour.webp" alt="MyCase">
+                        </div>
+                        <h3>MyCase</h3>
+                        <p>Cloud-based</p>
+                    </div>
+                    <div class="platform-item">
+                        <div class="platform-logo">
+                            <img src="./logos/practice_panther.png" alt="Practice Panther">
+                        </div>
+                        <h3>Practice Panther</h3>
+                        <p>Seamless sync</p>
+                    </div>
+                    <div class="platform-item">
+                        <div class="platform-logo">
+                            <img src="./logos/rocket-matter.png" alt="Rocket Matter">
+                        </div>
+                        <h3>Rocket Matter</h3>
+                        <p>Case management</p>
+                    </div>
+                    <div class="platform-item">
+                        <div class="platform-logo">
+                            <img src="./logos/lawmatics-logo.webp" alt="Lawmatics">
+                        </div>
+                        <h3>Lawmatics</h3>
+                        <p>Legal CRM</p>
+                    </div>
+                    <div class="platform-item">
+                        <div class="platform-logo">
+                            <img src="./logos/actionstep.webp" alt="Actionstep">
+                        </div>
+                        <h3>Actionstep</h3>
+                        <p>Practice management</p>
+                    </div>
+                    <div class="platform-item">
+                        <div class="platform-logo">
+                            <img src="./logos/leap.png" alt="LEAP">
+                        </div>
+                        <h3>LEAP</h3>
+                        <p>Case management</p>
+                    </div>
+                    <div class="platform-item">
+                        <div class="platform-logo">
+                            <img src="./logos/zolasuite.webp" alt="Zola Suite">
+                        </div>
+                        <h3>Zola Suite</h3>
+                        <p>Law office management</p>
+                    </div>
+                    <div class="platform-item">
+                        <div class="platform-logo">
+                            <img src="./logos/smokeball.png" alt="Smokeball">
+                        </div>
+                        <h3>Smokeball</h3>
+                        <p>Native integration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="partners-section">
+        <div class="container">
+            <h2>Trusted by Leading Australian Law Firms</h2>
+
+            <div class="partners-grid">
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <img src="./logos/nautilus_logo.png" alt="Nautilus Law">
+                    </div>
+                    <h3>Nautilus Law</h3>
+                </div>
+
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <img src="./logos/st-ives-law-logo.webp" alt="St Ives Law">
+                    </div>
+                    <h3>St Ives Law</h3>
+                </div>
+
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <img src="./logos/zed-law-black.webp" alt="Zed Law">
+                    </div>
+                    <h3>Zed Law</h3>
+                </div>
+
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <img src="./logos/openlegal.webp" alt="Open Legal">
+                    </div>
+                    <h3>Open Legal</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <h2>The Numbers</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">Hours Saved Weekly</div>
+                    <p class="stat-description">Automate screening, reminders, and submissions</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">87%</div>
+                    <div class="stat-label">Completion Rate</div>
+                    <p class="stat-description">Auto-save and reminders keep clients engaged</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">30%</div>
+                    <div class="stat-label">Faster Conversion</div>
+                    <p class="stat-description">Qualified leads move to cases quicker</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Integrations</div>
+                    <p class="stat-description">Works with Smokeball, Clio, and more</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How long does it take to set up?</h3>
+                    <p>Setup typically takes about 2 weeks. We handle the full integration with your CMS (Smokeball, Clio, etc.), customize your intake forms, and train your team to ensure a smooth launch.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I use it with my existing CMS?</h3>
+                    <p>Yes! WKO Intelligence works with 10+ case management systems including Smokeball, Clio, MyCase, Practice Panther, and more. If your CMS has an API, we can integrate with it.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do clients need special software?</h3>
+                    <p>No. Clients fill forms through a simple email link in their browser. No downloads or special software required.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is my data secure?</h3>
+                    <p>Yes. We use enterprise-grade encryption and comply with data protection regulations. All data flows directly to your CMS.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can multiple lawyers use it?</h3>
+                    <p>Absolutely. Assign leads to specific lawyers, track progress by team member, and scale your intake across your entire firm.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What if I need help?</h3>
+                    <p>We provide onboarding support and are available via email/chat during business hours. Our team is here to help you succeed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section dark-section">
+        <div class="container">
+            <h2>Ready to Transform Your Intake?</h2>
+            <p>Join Australian law firms saving time and closing cases faster.</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary-large">Try Interactive Demo</button>
+                <button class="btn btn-secondary-light">Get In Touch</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>WKO Intelligence</h4>
+                    <p>Modern intake for modern law firms</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Integrations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">DPA</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 WKO Intelligence. Built for modern law firms.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
